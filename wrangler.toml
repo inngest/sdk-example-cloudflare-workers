@@ -1,0 +1,3 @@
+name = "sdk-example-cloudflare-workers"
+main = "src/index.ts"
+compatibility_date = "2022-10-27"
