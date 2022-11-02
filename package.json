@@ -8,7 +8,7 @@
   },
   "private": true,
   "scripts": {
-    "dev": "wrangler dev --port 3000",
+    "dev": "wrangler dev --port 3000 --local",
     "deploy": "wrangler publish",
     "build": "wrangler publish --dry-run --outdir=dist"
   },
