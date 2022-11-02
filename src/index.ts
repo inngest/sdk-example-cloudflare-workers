@@ -1,5 +1,5 @@
 import { serve } from "inngest/cloudflare";
-import helloWorld from "./inngest/helloWorld";
+import fns from "./inngest";
 
 /**
  * Welcome to Cloudflare Workers! This is your first worker.
@@ -28,6 +28,6 @@ export default {
     env: Env,
     ctx: ExecutionContext
   ): Promise<Response> {
-    return serve("My Cloudflare Workers App", [helloWorld])({ request, env });
+    return serve("My Cloudflare Workers App", fns)({ request, env });
   },
 };
