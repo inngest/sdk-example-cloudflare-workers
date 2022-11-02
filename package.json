@@ -8,8 +8,9 @@
   },
   "private": true,
   "scripts": {
-    "start": "wrangler dev",
-    "deploy": "wrangler publish"
+    "dev": "wrangler dev --port 3000",
+    "deploy": "wrangler publish",
+    "build": "wrangler publish --dry-run --outdir=dist"
   },
   "dependencies": {
     "inngest": "^0.6.1"
